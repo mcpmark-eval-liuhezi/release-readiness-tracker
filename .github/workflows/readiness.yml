@@ -1,0 +1,11 @@
+name: Release Readiness CI
+
+on:
+  push
+
+jobs:
+  readiness:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Readiness check
+        run: echo "readiness check ok"
